@@ -11,3 +11,4 @@ import numpy as np
 import pandas as pd
 
 data = xr.DataArray(np.random.randn(2, 3), dims=("x", "y"), coords={"x": [10, 20]})
+date=xr.DataArray(np.random.randn(2, 3), dims=("x", "y"), coords={"x": [10, 20]})

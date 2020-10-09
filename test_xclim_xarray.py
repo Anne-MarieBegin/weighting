@@ -42,5 +42,5 @@ for kk in runsplit:
                 serie=('/klmx1/leduc/climex-core-qc/'+kk+'/series/'+ee+'/'+variable+'_'+kk+'_'+ee+'_se.nc')
                 nc.append(serie)
 ds=xr.open_mfdataset(nc,decode_times=False)
-#df=ds.pr.resample(time='MS')       
+df=ds.pr.resample(time='MS')       
        
